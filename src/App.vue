@@ -1,28 +1,53 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template v-cloak>
+  <QuickNotes />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import QuickNotes from './views/QuickNotes.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
+    QuickNotes,
   },
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+*,
+*::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+
+  background-color: $bg-color;
+}
+
+input,
+textarea,
+select,
+button,
+::placeholder {
+  font-family: inherit;
+}
+
+[v-cloak] {
+  display: hidden;
 }
 </style>
