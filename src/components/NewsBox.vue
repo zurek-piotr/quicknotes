@@ -27,7 +27,7 @@
           type="reset"
           value="Cancel"
           class="news__wrapper__buttonWrapper__button news__wrapper__buttonWrapper__button--cancel"
-          @click="hideNews()"
+          @click="HideNews()"
         />
       </div>
     </form>
@@ -49,14 +49,18 @@ export default {
       try {
         store
           .dispatch('AddNote', { title: this.title, content: this.content });
+        this.ClearFields();
       } catch (error) {
         console.error(error);
       }
     },
-    hideNews() {
+    HideNews() {
+      this.ClearFields();
+      this.$emit('hideNews');
+    },
+    ClearFields() {
       this.title = '';
       this.content = '';
-      this.$emit('hideNews');
     },
   },
   computed: {
