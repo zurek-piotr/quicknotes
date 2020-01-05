@@ -1,4 +1,5 @@
 module.exports = {
+  // publicPath: '/quicknotes/',
   css: {
     loaderOptions: {
       sass: {

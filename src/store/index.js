@@ -8,7 +8,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    API: 'http://www.mocky.io/v2/5dfe3220310000ed1ac96ee9',
+    API: 'https://www.mocky.io/v2/5dfe3220310000ed1ac96ee9',
     notes: [],
   },
   mutations,

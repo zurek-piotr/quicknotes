@@ -96,6 +96,8 @@ export default {
       border-radius: 3px;
       font-size: 10px;
       cursor: pointer;
+      transition: transform 0.5s;
+      will-change: transform;
 
       &--reject {
         background: $bgWarning-color;
@@ -108,6 +110,10 @@ export default {
         background: white;
         color: $bgWarning-color;
         font-weight: 500;
+      }
+      &:focus,
+      &:hover {
+        transform: scale(1.1);
       }
     }
   }

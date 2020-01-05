@@ -120,12 +120,22 @@ export default {
           color: white;
           width: 80px;
           height: 2em;
+
+          &:focus,
+          &:hover {
+            background-color: lighten($btnPrimary-color, 5%);
+          }
         }
         &--cancel {
           background: white;
           color: $btnPrimary-color;
           width: 80px;
           height: 2em;
+
+          &:focus,
+          &:hover {
+            color: lighten($btnPrimary-color, 10%);
+          }
         }
         &:disabled {
           color: lightgrey;

@@ -223,7 +223,8 @@ export default {
     align-self: center;
     cursor: pointer;
 
-    &:focus {
+    &:focus,
+    &:hover {
       background-color: lighten($btnPrimary-color, 5%);
     }
   }
@@ -249,8 +250,9 @@ export default {
       border-color: lightgrey;
       transform: rotate(45deg);
     }
-    &:focus {
-      border-color: lighten($btnPrimary-color, 40%);
+    &:focus,
+    &:hover {
+      border-color: $btnPrimary-color;
     }
   }
 }
