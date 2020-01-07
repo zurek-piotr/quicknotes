@@ -6,6 +6,7 @@
           <th class="notes__table__header__checkbox">
             <input type="checkbox" class="checkbox" v-model="selectAll" />
           </th>
+
           <th>
             <div class="notes__table__header__cellWrapper">
               ID
@@ -21,6 +22,7 @@
               </div>
             </div>
           </th>
+
           <th>
             <div class="notes__table__header__cellWrapper">
               Title
@@ -36,6 +38,7 @@
               </div>
             </div>
           </th>
+
           <th>
             <div class="notes__table__header__cellWrapper">
               Content
@@ -51,6 +54,7 @@
               </div>
             </div>
           </th>
+
           <th>
             <div class="notes__table__header__cellWrapper">
               Status
@@ -68,6 +72,7 @@
           </th>
         </tr>
       </thead>
+
       <tbody>
         <tr
           class="notes__table__row"
@@ -83,16 +88,20 @@
               number
             />
           </td>
+
           <td class="notes__table__row__element notes__table__row__element--id">
             {{ note.id }}
           </td>
+
           <td class="notes__table__row__element">{{ note.title }}</td>
           <td class="notes__table__row__element">{{ note.content }}</td>
           <td class="notes__table__row__element">{{ note.status }}</td>
         </tr>
       </tbody>
     </table>
+
     <button class="notes__addButton" @click="newsActive = true">Add</button>
+
     <transition name="fade">
       <DeleteModal
         :selected.sync="selected"
@@ -100,6 +109,7 @@
         v-show="selected.length != 0"
       />
     </transition>
+
     <transition name="fade">
       <NewsBox @hideNews="newsActive = false" v-show="newsActive" />
     </transition>

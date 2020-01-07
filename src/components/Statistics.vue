@@ -1,20 +1,28 @@
 <template>
   <section class="statistics">
     <div class="statistics__counterWrapper">
-      <span class="statistics__counterWrapper__header">Total</span>
-      <span class="statistics__counterWrapper__counter">{{
-        TotalCounter
-      }}</span>
+      <span class="statistics__counterWrapper__header">
+        Total
+      </span>
+      <span class="statistics__counterWrapper__counter">
+        {{ TotalCounter }}
+      </span>
     </div>
     <div class="statistics__counterWrapper">
-      <span class="statistics__counterWrapper__header">Completed</span>
-      <span class="statistics__counterWrapper__counter">{{
-        CompletedCounter
-      }}</span>
+      <span class="statistics__counterWrapper__header">
+        Completed
+      </span>
+      <span class="statistics__counterWrapper__counter">
+        {{ CompletedCounter }}
+      </span>
     </div>
     <div class="statistics__counterWrapper">
-      <span class="statistics__counterWrapper__header">Not completed</span>
-      <span class="statistics__counterWrapper__counter">{{ NewCounter }}</span>
+      <span class="statistics__counterWrapper__header">
+        Not completed
+      </span>
+      <span class="statistics__counterWrapper__counter">
+        {{ NewCounter }}
+      </span>
     </div>
   </section>
 </template>

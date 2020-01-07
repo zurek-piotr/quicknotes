@@ -2,6 +2,7 @@
   <section class="news">
     <form @submit.prevent="AddNote()" class="news__wrapper">
       <h2 class="news__wrapper__header">News</h2>
+
       <input
         class="news__wrapper__field news__wrapper__field--title"
         type="text"
@@ -9,6 +10,7 @@
         placeholder="Add title"
         required
       />
+
       <textarea
         class="news__wrapper__field news__wrapper__field--content"
         v-model="content"
@@ -16,6 +18,7 @@
         required
       >
       </textarea>
+
       <div class="news__wrapper__buttonWrapper">
         <input
           type="submit"

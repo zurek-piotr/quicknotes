@@ -15,10 +15,12 @@
               1,0,1,0-1-1A1,1,0,0,0,12.88,18.91Z"
         />
       </svg>
-      <span class="deleteModal__message__text"
-        >Do you want to delete this news?</span
-      >
+
+      <span class="deleteModal__message__text">
+        Do you want to delete this news?
+      </span>
     </div>
+
     <div class="deleteModal__buttonsWrapper">
       <button
         class="deleteModal__buttonsWrapper__button deleteModal__buttonsWrapper__button--reject"
@@ -26,6 +28,7 @@
       >
         No
       </button>
+
       <button
         class="deleteModal__buttonsWrapper__button deleteModal__buttonsWrapper__button--accept"
         @click="DeleteNotes()"
